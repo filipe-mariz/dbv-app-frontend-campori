@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="container__header">
+    <img src="logo.png" alt="" height="42" width="42">
+  </div>
+  <div class="container__content">
+    <div class="container__content__title">Inscrição dos encontreiros</div>
+    <div class="container__content__forms">
+      <div class="input-box">
+        <div class="input-title">Nome completo</div>
+        <input [(ngModel)]="data.fullName" type="text" placeholder="Por favor, insira seu nome completo">
+      </div>
+      <div class="input-box">
+        <div class="input-title">Igreja que congrega</div>
+        <input [(ngModel)]="data.church" type="text" placeholder="Ex.: Igreja Adventista do Arruda">
+      </div>
+      <div class="input-box">
+        <div class="input-title">WhatsApp</div>
+        <input [(ngModel)]="data.whatsapp" type="text" placeholder="81 9 9999-9999">
+      </div>
+      <div class="container__content__forms">
+        <div class="input-box">
+          <div class="input-title">Instagram</div>
+          <input [(ngModel)]="data.instagram" type="text" placeholder="@meu_insta">
+        </div>
+        <div class="input-box">
+          <div class="input-title">Você possui restrição alimentar, é vegetariano ou tem intolerância?</div>
+          <input [(ngModel)]="data.foodRestriction" type="text" placeholder="Caso não tenha, não precisa responder" value="Não">
+        </div>
+        <div class="input-box">
+          <div class="input-title">Qual sua primeira opção de equipe?</div>
+          <select [(ngModel)]="data.team.firstOption">
+            <option *ngFor="let team of teams.fisrtTeamsGroup" [value]="team">{{ team }}</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <div class="input-title">Qual sua segunda opção de equipe?</div>
+          <select [(ngModel)]="data.team.secondOption">
+            <option *ngFor="let team of teams.secondTeamsGroup" [value]="team">{{ team }}</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <div class="input-title">Qual sua terceira opção de equipe?</div>
+          <select [(ngModel)]="data.team.thirdOption">
+            <option *ngFor="let team of teams.thirdTeamsGroup" [value]="team">{{ team }}</option>
+          </select>
+        </div>
+      <button (click)="sendLoginData()">Enviar</button>
+    </div>
+  </div>
+</div>
