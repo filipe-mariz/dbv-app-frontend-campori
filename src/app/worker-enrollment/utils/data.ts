@@ -1,16 +1,9 @@
 import { IFormaData, ITeamsGroup } from './interfaces';
 
 export const formData: IFormaData = {
-  fullName: "",
-  church: "",
-  whatsapp: "",
-  instagram: "",
-  foodRestriction: "",
-  team: {
-    firstOption: "",
-    secondOption: "",
-    thirdOption: "",
-  }
+  id: "",
+  name: "",
+  club_id: "",
 };
 
 export const teamsGroup: ITeamsGroup = {

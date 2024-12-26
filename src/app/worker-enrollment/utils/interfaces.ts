@@ -3,16 +3,9 @@ type secondTeamsGroup = 'Ordem' | 'Artes' | 'Liturgia' | 'Roteiro' | 'Sonoplasti
 type thirdTeamsGroup =  'Garçons' | 'Correios' | 'Infraestrutura' | 'Secretaria/externa' | 'Minemercado' | 'Saúde' | 'Recepção dos palestrantes';
 
 export interface IFormaData {
-  fullName: string
-  church: string
-  whatsapp: string
-  instagram: string
-  foodRestriction: string
-  team: {
-    firstOption: string
-    secondOption: string
-    thirdOption: string
-  }
+  id: string
+  name: string
+  club_id: string
 }
 
 export interface ITeamsGroup {

@@ -5,7 +5,7 @@
 
 .container {
   justify-content: center;
-  display: inline-block;
+  // display: inline-block;
 
   &__header {
     height: 20vh;
@@ -60,7 +60,8 @@
           width: 80vw;
         }
 
-        input, select {
+        input,
+        select {
           width: 80vw;
           height: 8vh;
           border-top: none;
@@ -94,4 +95,8 @@
       }
     }
   }
+}
+
+.m-t-10 {
+  margin-top: 20px;
 }
