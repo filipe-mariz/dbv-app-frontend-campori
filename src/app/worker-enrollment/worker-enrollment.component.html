@@ -29,6 +29,19 @@
         <input [(ngModel)]="data.name" type="text" placeholder="Ex.: ÁGUIAS">
       </div>
 
+      <div class="input-box">
+        <div class="input-title">Envie-nos o comprovante de pagamento da inscrição do seu clube, por favor.</div>
+        <input
+          type="file"
+          id="fileInput"
+          (change)="onFileSelected($event)"
+        />
+      </div>
+
+      <!-- <div *ngIf="selectedFile">
+        <p><strong>Arquivo selecionado:</strong> {{ selectedFile.name }}</p>
+        <button (click)="uploadFile()">Fazer upload</button>
+      </div> -->
 
 
 
