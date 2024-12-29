@@ -55,7 +55,8 @@ export class WorkerEnrollmentComponent implements OnInit {
 
       const response: AxiosResponse = await axios.post('http://localhost:3000/clubs/payment', formData, {
         headers: {
-          'Content-Type': 'multipart/form-data', // Certifica que o formato é multipart
+          'Content-Type': 'multipart/form-data',
+          'name': this.data.name
         },
       });
 
